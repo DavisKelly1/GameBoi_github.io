@@ -1,0 +1,87 @@
+<html> 
+<head>
+<link type="text/css" rel="stylesheet" href="main.css" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1JwYtdndycQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+<audio width="0" height"0" autoplay loop>   
+     <source src="The-Entertainer-By-Scott-Joplin-Classical-music-for-children-ytmp3.com.mp3" 
+type="audio/mpeg"> 
+</audio>
+</audio>
+</audio>
+<title> DKsite </title> 
+<script>
+function banner(){
+	var text=confirm("Go to Google?")
+	return text;
+}
+  
+function answer(){   
+     var radio = document.getElementsByName("trivia")   
+     var selection = false;   
+     var message = "";   
+  
+     for(var i = 0; i <radio.length; i++) {  
+          if(radio[i].value == "correct" && radio[i].checked == true) { 
+               selection = true; 
+          } //end if statement   
+     } //end for loop   
+     if(selection == true) {   
+          message = message + "<b><p style='color:#80ff00'>Yeah boi!</p></b>";   
+          } else {     
+     message = message + "<b><p style='color:#FF2F00'>Nah Man!</p></b>";   
+     }   
+     document.getElementById("a10").innerHTML = message; 
+} //end function answer
+</script>
+</head> 
+<body id="background"> 
+<div id="rightside">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/8DmpWqmuh3c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div id="leftside">
+</div>
+<div class="clearfloat"> </div>
+	<a href="https://www.google.com/" onclick="return banner()"> <center> <header id="header"> <b> /\/\/\DKsite/\/\/\</b> </header> </center> </a>
+<nav> 
+	<ul>
+		<li class="navitem"> <a href="home.html">Home</a> </li>
+		<li class="navitem"> <a href="games.html">Games</a> </li>
+		<li class="navitem"> <a href="videos.html">Video</a></li>
+	<ul>
+</nav>
+<div id="cmn">
+<h1> Welcome to DKsite! </h1>
+<p> Explore all you want and <strong> memes beware! </strong> </p>
+<marquee> 
+	<img src="https://media.giphy.com/media/12I7wfqHTWTU9G/source.gif"> 
+</marquee>
+<hr class="wrap-hr">
+<marquee direction= "right"> <img src="https://i.imgur.com/IoJJVsR.gif">
+</marquee>
+<hr class="wrap-hr">
+<ol>
+	<li class="wrap-list"> These memes are funny </li>
+	<li class="wrap-list"> Also floppy  </li>
+	<li class="wrap-list"> And also part of the memes family </li>
+</ol>
+<hr class="wrap-hr">
+<center> Davis Kelly's <a href="shellshock.io">Favorite IO. Game</a> </center>
+<hr class="wrap-hr-two">
+<img src="https://i.imgflip.com/iqe0r.jpg">
+<div class="wrap-trivia">
+	<h2> <strong> Meme Question: 
+</strong> 
+</h2>
+<p> What is the most popular meme in 2017? </p>
+<form>
+	<div id="a10"> </div>
+	<input type="radio" name="trivia" value="correct"> White Guy Blinking <br>
+	<input type="radio" name="trivia" value="incorrect"> Mocking Spongebob <br>
+	<input type="radio" name="trivia" value="incorrect"> Distracted Boyfriend <br>
+	<input type="radio" name="trivia" value="incorrect"> Roll Safe <br>
+	<input class="a2" type="button" value="Submit Boi" id="button" onclick="answer()">
+</form>
+</div>
+<center> <footer> Hehe, im at the bottom :) </footer> </center>
+</body> 
+</html>
